@@ -3,16 +3,13 @@ import logo from './logo.svg';
 import frontBack from './back_front.jpg'
 import './App.css';
 import './Bem.css';
+import MenuVertical from './components/menu/MenuVertical'
+import MenuHorizontal from './components/menu/MenuHorizontal'
 
 function App() {
   return (
       <div className="div-center">
-          <ul className="menu-horizontal">
-            <li className="menu-horizontal-nav"><a className="menu-horizontal-nav-item" href="default.asp">Home</a></li>
-            <li className="menu-horizontal-nav"><a className="menu-horizontal-nav-item" href="news.asp">News</a></li>
-            <li className="menu-horizontal-nav"><a className="menu-horizontal-nav-item" href="contact.asp">Contact</a></li>
-            <li className="menu-horizontal-nav"><a className="menu-horizontal-nav-item" href="about.asp">About</a></li>
-          </ul>
+          <MenuHorizontal/>
           <div className="abstract">
             <h1 className="abstract-title">Lucas Vinícius Machado</h1>
             <p className="abstract-p">
