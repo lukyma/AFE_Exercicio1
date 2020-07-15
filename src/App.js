@@ -3,13 +3,20 @@ import logo from './logo.svg';
 import frontBack from './back_front.jpg'
 import './App.css';
 import './Bem.css';
+import 'puc-shared-components-menu/MenuVertical';
+import 'puc-shared-components-menu/MenuHorizontal';
 import MenuVertical from './components/menu/MenuVertical'
 import MenuHorizontal from './components/menu/MenuHorizontal'
 
 function App() {
   return (
       <div className="div-center">
-          <MenuHorizontal/>
+        {/* Esses menus são as importações realizadas do NPM. */}
+          <menu-vertical/>
+          <menu-horizontal/>
+        {/* Esses menus são os componentes locais. Descomentar para funcionar. */}
+        {/* <MenuVertical/>
+        <MenuHorizontal/> */}
           <div className="abstract">
             <h1 className="abstract-title">Lucas Vinícius Machado</h1>
             <p className="abstract-p">
